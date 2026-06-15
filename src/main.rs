@@ -1,4 +1,4 @@
-const CHAIN: &str = "proto-buf-d2d8b1";
+const CHAIN: &str = "proto-buf-e53a03";
 fn main() {
     let data: Vec<i32> = (1..=20).collect();
     let evens: Vec<i32> = data.iter().filter(|&&x| x % 2 == 0).cloned().collect();

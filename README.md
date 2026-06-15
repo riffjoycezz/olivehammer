@@ -1,4 +1,4 @@
-# proto-buf-d2d8b1
+# proto-buf-e53a03
 
 A Rust proto-buf utility.
 

